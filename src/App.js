@@ -7,6 +7,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Button from '@mui/material/Button';
 
 function Copyright(props) {
   return (
@@ -24,6 +25,14 @@ function Copyright(props) {
 export default function AlignItemsList() {
   return (
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+        <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
+          >
+            Sign In
+        </Button>
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
